@@ -1,0 +1,37 @@
+{
+  "name": "bs-react-simple-maps",
+  "version": "0.0.1",
+  "description": "Bucklescript bindings for react-simple-maps",
+  "scripts": {
+    "changelog": "auto-changelog --template keepachangelog",
+    "build": "bsb -make-world -clean-world",
+    "watch": "bsb -make-world -clean-world -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/defuex/bs-react-simple-maps"
+  },
+  "keywords": [
+    "bs-react-simple-maps",
+    "BuckleScript",
+    "Reason"
+  ],
+  "author": "Timo Obereder (timo.obereder@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/defuex/bs-react-simple-maps/issues"
+  },
+  "devDependencies": {
+    "bs-platform": "^3.1.4",
+    "reason-react": "^0.4.1"
+  },
+  "peerDependencies": {
+    "reason-react": "^0.4.1"
+  },
+  "dependencies": {
+    "react-simple-maps": "^0.12.1"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
