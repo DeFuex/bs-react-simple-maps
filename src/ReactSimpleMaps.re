@@ -284,8 +284,9 @@ module Line = {
   external lineClass : ReasonReact.reactClass = "Line";
   [@bs.deriving abstract]
   type coordinatesT = {
-    _start: array(float), /* keeping conventions with _end */
-    _end: array(float), /* not possible to use keyword end, changed to _end */
+    start: array(float),
+    [@bs.as "end"]
+    _end: array(float),
   };
   [@bs.deriving abstract]
   type curveT = {
