@@ -54,6 +54,40 @@ module ZoomableGroup = {
     );
 };
 
+module ZoomableGlobe = {
+  [@bs.module "react-simple-maps"]
+  external zoomableGlobeClass : ReasonReact.reactClass = "ZoomableGlobe";
+  [@bs.deriving abstract]
+  type styleT;
+  [@bs.deriving abstract]
+  type jsProps = {
+    zoom: Js.nullable(int),
+    center: Js.nullable(array(int)),
+    style: Js.nullable(styleT),
+    /* onMoveStart: Js.nullable(string),
+    onMoveEnd: Js.nullable(int), */
+  };
+  let make =
+      (
+        ~zoom=?,
+        ~center=?,
+        ~style=?,
+        /* ~onMoveStart=?,
+        ~onMoveEnd=?, */
+        children
+      ) =>
+    ReasonReact.wrapJsForReason(
+      ~reactClass=zoomableGlobeClass,
+      ~props=
+        jsProps(
+          ~zoom=fromOption(zoom),
+          ~center=fromOption(center),
+          ~style=fromOption(style),
+        ),
+      children,
+    );
+};
+
 module Geography = {
   type projectionT;
   [@bs.deriving abstract]
