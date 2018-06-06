@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Bucklescript + ReasonReact binding for [RSM](https://www.react-simple-maps.io) components. If you should realise that there's a component missing, please contribute to this project.
+Bucklescript + ReasonReact binding for [RSM](https://www.react-simple-maps.io) components. If you feel like there's anything missing, please feel free to contribute to this project.
 
 ## Installation
 

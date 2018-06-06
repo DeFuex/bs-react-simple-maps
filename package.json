@@ -1,6 +1,6 @@
 {
   "name": "bs-react-simple-maps",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Bucklescript bindings for react-simple-maps",
   "scripts": {
     "changelog": "auto-changelog --template keepachangelog",
